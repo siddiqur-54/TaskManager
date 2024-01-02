@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0ffff; /* Light Cyan background */
+    color: #000; /* Black text color */
+}
+
+header {
+    background-color: #008080; /* Teal */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #00ced1; /* Dark Turquoise */
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #000; /* Black text color */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold; /* Bold text */
+    border-right: 1px solid #008080; /* Teal border */
+}
+
+nav a:last-child {
+    border-right: none; /* Remove border for the last item */
+}
+
+nav a:hover {
+    background-color: #20b2aa; /* Light Sea Green on hover */
+    color: #333;
+}
+
+.content {
+    padding: 20px;
+}

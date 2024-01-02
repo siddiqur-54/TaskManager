@@ -1,15 +1,25 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <title>Task Manager</title>
 </head>
 <body>
-    <h1>Welcome to the world's top  Task Manager</h1>
+    <header>
+        <h1>Welcome to the Task Manager</h1>
+    </header>
+    <nav>
+        <a href='{% url "accounts:login_view" %}'>Sign In</a>
+        <a href='{% url "accounts:register_view" %}'>Sign Up</a>
+    </nav>
 
-    {% block content %}
-
-    {% endblock content %}
+    <div class="content">
+        {% block content %}
+        {% endblock content %}
+    </div>
 </body>
 </html>
