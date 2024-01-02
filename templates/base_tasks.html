@@ -12,15 +12,15 @@
 <body>
     <header>
         <h1>Welcome to the Task Manager</h1>
-        <h2>Welcome, Mr. {{ user.username }}</h2>
+        <h2>Mr. {{ user.username }}</h2>
     </header>
     <nav>
         <a href='/'>View Profile</a>
         <a href='{% url "accounts:update_view" %}'>Update Profile</a>
         <a href='{% url "accounts:change_password_view" %}'>Change Password</a>
         <a href='{% url "tasks:task_create_view" %}'>Create Task</a>
-        <a href='{% url "tasks:task_list_search_view" %}'>Search Task List</a>
-        <a href="{% url 'tasks:task_list_filter' %}">Filter Task List</a>
+        <a href='{% url "tasks:task_list_search_view" %}'>Search Task</a>
+        <a href="{% url 'tasks:task_list_filter' %}">Filter Task</a>
         <a href='{% url "accounts:logout_view" %}'>Log Out</a>
     </nav>
 

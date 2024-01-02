@@ -2,6 +2,7 @@
 
 {% block content %}
 
+<div class="element">
 <h2>Search Task List</h2>
 <form action="" method="GET">
     <input type="text" name="query" placeholder="Search by Title">
@@ -9,7 +10,7 @@
 </form>
 
 <h3>List of the searched tasks: </h3>
-<p>Search results for "{{ query }}"</p>
+<p>Search results for <b> "{{ query }} </b>"</p>
 {% if query %}
 <ol>
     {% for task_object in task_object_search_list %}
@@ -63,7 +64,6 @@
         </li>
     {% endfor %}
 </ol>
-
-
+</div>
 
 {% endblock content %}

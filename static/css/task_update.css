@@ -1,0 +1,38 @@
+.form-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+.image-item {
+    margin-right: 10px;
+}
+
+.image-item img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.delete-link {
+    color: #dc3545;
+    margin-top: 5px;
+    display: block;
+    text-decoration: none;
+}
+
+.delete-link:hover {
+    text-decoration: underline;
+}

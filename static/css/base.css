@@ -1,43 +1,45 @@
+.element {
+   margin-left: 25%;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0ffff; /* Light Cyan background */
-    color: #000; /* Black text color */
+    background-color: #e0ffff;
+    color: #000;
+    justify-content: center;
 }
 
 header {
-    background-color: #008080; /* Teal */
+    background-color: #008080;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 
 nav {
-    background-color: #00ced1; /* Dark Turquoise */
+    background-color: #00ced1;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 nav a {
-    float: left;
     display: block;
-    color: #000; /* Black text color */
+    color: #000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-weight: bold; /* Bold text */
-    border-right: 1px solid #008080; /* Teal border */
+    font-weight: bold;
+    border-right: 1px solid #008080;
 }
 
 nav a:last-child {
-    border-right: none; /* Remove border for the last item */
+    border-right: none;
 }
 
 nav a:hover {
-    background-color: #20b2aa; /* Light Sea Green on hover */
+    background-color: #20b2aa;
     color: #333;
-}
-
-.content {
-    padding: 20px;
 }

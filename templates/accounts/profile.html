@@ -2,7 +2,8 @@
 
 {% block content %}
 
-<h2>My Profile</h2>
+<div class="element">
+<h2>Profile Information</h2>
   {% if person_object %}
     <p><b>Username: </b>{{ person_object.user.username }}</p>
     <p><b>Contact: </b>{{ person_object.contact }}</p>
@@ -12,5 +13,6 @@
   {% else %}
     <p>No profile information found for this user.</p>
   {% endif %}
+</div>
 
 {% endblock content %}

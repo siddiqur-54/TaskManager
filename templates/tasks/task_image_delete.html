@@ -2,6 +2,8 @@
 
 
 {% block content %}
+
+<div class="element">
 <h2>Task Image Delete</h2>
 {% if task_image %}
 <form method='POST' action=''>
@@ -10,8 +12,7 @@
     <img src="{{ task_image.image.url }}" width="150px" height="100px" alt="Task Image"> <br> <br>
     <button type='submit'>Yes, delete.</button>
 </form>
-    
-
 {% endif %}
+</div>
 
 {% endblock content %}

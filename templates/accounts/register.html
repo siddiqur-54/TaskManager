@@ -2,6 +2,7 @@
 
 {% block content %}
 
+<div class="element">
 {% if not request.user.is_authenticated %}
 <div style="margin-top: 30px;">
     <form method="POST">{% csrf_token %}
@@ -14,5 +15,6 @@
 <p>You are already logged in and cannot register. Would you like to logout?</p>
 <a href="/accounts/logout/">Logout</a>
 {% endif %}
+</div>
 
 {% endblock content %}

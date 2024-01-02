@@ -2,6 +2,8 @@
 
 
 {% block content %}
+
+<div class="element">
 <h2>Task Delete</h2>
 {% if task_object %}
 <form method='POST' action=''>
@@ -9,8 +11,7 @@
     <p>Are you sure you want to delete "{{ task_object.title }}"</p>
     <button type='submit'>Yes, delete.</button>
 </form>
-    
-
 {% endif %}
+</div>
 
 {% endblock content %}

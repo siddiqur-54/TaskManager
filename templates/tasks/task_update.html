@@ -1,31 +1,32 @@
 {% extends 'base_tasks.html' %}
 
 {% block content %}
+{% load static %}
 
+<link rel="stylesheet" type="text/css" href="{% static 'css/task_update.css' %}">
+
+<div class="form-container">
 {% if not updated %}
-
-<h3>Update Task</h3>
-<div style="margin-top: 30px;">
-<form action="" method="POST" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{task_form.as_p}}
-    {{task_image_form.as_p}}
-    {% if task_image_list %}
-    <h3>Images:</h3>
-    <div style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
-        {% for task_image in task_image_list %}
-        <div style="margin-right: 10px;">
-            <img src="{{ task_image.image.url }}" width="150px" height="100px" alt="Task Image">
-            <a href="{% url 'tasks:task_image_delete_view' image_id=task_image.id %}">Delete</a>
-        </div>
-        {% endfor %}
+    <h3>Update Task</h3>
+    <div style="margin-top: 30px;">
+        <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ task_form.as_p }}
+        {{ task_image_form.as_p }}
+        {% if task_image_list %}
+            <h3>Images:</h3>
+            <div class="image-container">
+            {% for task_image in task_image_list %}
+                <div class="image-item">
+                    <img src="{{ task_image.image.url }}" alt="Task Image">
+                    <a href="{% url 'tasks:task_image_delete_view' image_id=task_image.id %}" class="delete-link">Delete</a>
+                </div>
+            {% endfor %}
+            </div>
+        {% endif %}
+        <button style="margin-top: 10px;" type="submit">Update Task</button>
+        </form>
     </div>
-    {% endif %}
-
-    <button style="margin-top: 10px;" type="submit">Update Task</button>
-</form>
-</div>
-
 {% endif %}
-
+</div>
 {% endblock content %}

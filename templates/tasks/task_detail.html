@@ -1,34 +1,39 @@
 {% extends "base_tasks.html" %}
 
 {% block content %}
-<h2>Task Details</h2>
-<p><b>Title: </b>{{ task_object.title }}</p>
-<p><b>Created On: </b>{{ task_object.created_at }}</p>
-<p><b>Description: </b>{{ task_object.description }}</p>
-<p><b>Priority: </b>{{ task_object.get_priority_display }}</p>
-<p><b>Deadline: </b>{{ task_object.deadline }}</p>
-<p><b>Last Updated On: </b>{{ task_object.updated_at }}</p>
-<p><b>Pending Status: </b>{{ task_object.pending }}</p>
 
-{% if task_image_list %}
-  <h3>Images:</h3>
-  <div style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
-    {% for task_image in task_image_list %}
-      <div style="margin-right: 10px;">
-        <img src="{{ task_image.image.url }}" width="150px" height="100px" alt="Task Image">
-      </div>
-    {% endfor %}
-  </div>
-{% endif %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/task_detail.css' %}">
+    
+<div class="task-details">
+    <h2>Task Details</h2>
+    <p><b>Title: </b>{{ task_object.title }}</p>
+    <p><b>Created On: </b>{{ task_object.created_at }}</p>
+    <p><b>Description: </b>{{ task_object.description }}</p>
+    <p><b>Priority: </b>{{ task_object.get_priority_display }}</p>
+    <p><b>Deadline: </b>{{ task_object.deadline }}</p>
+    <p><b>Last Updated On: </b>{{ task_object.updated_at }}</p>
+    <p><b>Pending Status: </b>{{ task_object.pending }}</p>
 
-<br>
-{% if task_object.pending == True %}
-    <a href='{% url "tasks:mark_completed_view" slug=task_object.slug %}'>Mark As Completed</a> ||
-{% else %}
-    <a href='{% url "tasks:mark_pending_view" slug=task_object.slug %}'>Mark As Pending</a> ||
-{% endif %}
-<a href='{% url "tasks:task_detail_view" slug=task_object.slug %}'>Details</a> ||
-<a href='{% url "tasks:task_update_view" slug=task_object.slug %}'>Update</a> ||
-<a href='{% url "tasks:task_delete_view" slug=task_object.slug %}'>Delete</a>
+    {% if task_image_list %}
+        <h3>Images:</h3>
+        <div class="image-container">
+            {% for task_image in task_image_list %}
+                <div class="image-item">
+                    <img src="{{ task_image.image.url }}" alt="Task Image">
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
 
+    <br>
+
+    {% if task_object.pending == True %}
+        <a href='{% url "tasks:mark_completed_view" slug=task_object.slug %}'>Mark As Completed</a> ||
+    {% else %}
+        <a href='{% url "tasks:mark_pending_view" slug=task_object.slug %}'>Mark As Pending</a> ||
+    {% endif %}
+    <a href='{% url "tasks:task_update_view" slug=task_object.slug %}'>Update</a> ||
+    <a href='{% url "tasks:task_delete_view" slug=task_object.slug %}'>Delete</a>
+</div>
 {% endblock content %}
