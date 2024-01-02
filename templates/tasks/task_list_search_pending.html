@@ -1,0 +1,49 @@
+{% extends 'base_tasks.html' %}
+
+{% block content %}
+
+<br><br>
+<h3>Pending Task List</h3>
+<form action="" method="GET">
+    <input type="text" name="query" placeholder="Search by Title/Description">
+    <input type="submit">
+</form>
+
+<h3>List of the searched Tasks: </h3>
+<p>Search results for "{{ query }}"</p>
+{% if query %}
+<ul>
+    {% for task_object in task_object_search_list %}
+        {% if task_object.title %}
+            <li>
+                {{task_object.title}} <br>
+                {{task_object.description}} <br>
+                <a href='{% url "tasks:mark_completed_view" slug=task_object.slug %}'>Mark As Completed</a> ||
+                <a href='{% url "tasks:task_detail_view" slug=task_object.slug %}'>Details</a> ||
+                <a href='{% url "tasks:task_update_view" slug=task_object.slug %}'>Update</a> ||
+                <a href='{% url "tasks:task_delete_view" slug=task_object.slug %}'>Delete</a><br>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endif %}
+
+
+<h3>List of all the tasks: </h3>
+<ul>
+    {% for task_object in task_object_list %}
+        {% if task_object.title %}
+            <li>
+                {{task_object.title}} <br>
+                {{task_object.description}} <br>
+                <a href='{% url "tasks:mark_completed_view" slug=task_object.slug %}'>Mark As Completed</a> ||
+                <a href='{% url "tasks:task_detail_view" slug=task_object.slug %}'>Details</a> ||
+                <a href='{% url "tasks:task_update_view" slug=task_object.slug %}'>Update</a> ||
+                <a href='{% url "tasks:task_delete_view" slug=task_object.slug %}'>Delete</a><br>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+
+{% endblock content %}

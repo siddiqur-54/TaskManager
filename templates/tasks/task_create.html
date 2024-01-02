@@ -1,0 +1,19 @@
+{% extends 'base_tasks.html' %}
+
+{% block content %}
+
+{% if not created %}
+
+<h2>Create Task</h2>
+<div style="margin-top: 30px;">
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{task_form.as_p}}
+    {{ task_image_form.as_p }}
+    <button style="margin-top: 10px;" type="submit">Create Task</button>
+</form>
+</div>
+
+{% endif %}
+
+{% endblock content %}

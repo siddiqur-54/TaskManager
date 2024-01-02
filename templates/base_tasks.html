@@ -12,7 +12,10 @@
     <a href='{% url "accounts:update_view" %}'>Update Profile</a> ||
     <a href='{% url "accounts:change_password_view" %}'>Change Password</a> ||
     <a href='{% url "accounts:logout_view" %}'>Log Out</a> <br> <br>
-    
+    <a href='{% url "tasks:task_create_view" %}'>Create Task</a> ||
+    <a href='{% url "tasks:task_list_search_pending_view" %}'>Pending Task List</a> ||
+    <a href='{% url "tasks:task_list_search_completed_view" %}'>Completed Task List</a>
+
     {% block content %}
 
     {% endblock content %}

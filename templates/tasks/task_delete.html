@@ -1,0 +1,16 @@
+{% extends "base_tasks.html" %}
+
+
+{% block content %}
+<h2>Task Delete</h2>
+{% if task_object %}
+<form method='POST' action=''>
+    {% csrf_token %}
+    <p>Are you sure you want to delete "{{ task_object.title }}"</p>
+    <button type='submit'>Yes, delete.</button>
+</form>
+    
+
+{% endif %}
+
+{% endblock content %}
