@@ -4,11 +4,11 @@
 
 <h2>My Profile</h2>
   {% if person_object %}
-    <p>Username: {{ person_object.user.username }}</p>
-    <p>Contact: {{ person_object.contact }}</p>
-    <p>Birth Date: {{ person_object.birth_date }}</p>
-    <p>Gender: {{ person_object.get_gender_display }}</p>
-    <p>Blood Group: {{ person_object.get_blood_group_display }}</p>
+    <p><b>Username: </b>{{ person_object.user.username }}</p>
+    <p><b>Contact: </b>{{ person_object.contact }}</p>
+    <p><b>Birth Date: </b>{{ person_object.birth_date }}</p>
+    <p><b>Gender: </b>{{ person_object.get_gender_display }}</p>
+    <p><b>Blood Group: </b>{{ person_object.get_blood_group_display }}</p>
   {% else %}
     <p>No profile information found for this user.</p>
   {% endif %}

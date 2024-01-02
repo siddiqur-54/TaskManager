@@ -1,0 +1,52 @@
+{% extends 'base_tasks.html' %}
+
+{% block content %}
+
+<h2>Filter Task List</h2>
+
+<form method="get" action="{% url 'tasks:task_list_filter' %}">
+    <label for="priority">Priority:</label>
+    <select name="priority" id="priority">
+        <option value="all" {% if priority_filter == 'all' %}selected{% endif %}>All</option>
+        <option value="L" {% if priority_filter == 'L' %}selected{% endif %}>Low</option>
+        <option value="M" {% if priority_filter == 'M' %}selected{% endif %}>Medium</option>
+        <option value="H" {% if priority_filter == 'H' %}selected{% endif %}>High</option>
+    </select>
+
+    <label for="status">Status:</label>
+    <select name="status" id="status">
+        <option value="all" {% if status_filter == 'all' %}selected{% endif %}>All</option>
+        <option value="True" {% if status_filter == 'True' %}selected{% endif %}>Pending</option>
+        <option value="False" {% if status_filter == 'False' %}selected{% endif %}>Completed</option>
+    </select>
+
+    <label for="order_by">Order by:</label>
+    <select name="order_by" id="order_by">
+        <option value="-created_at" {% if order_by_param == '-created_at' %}selected{% endif %}>Created (Desc)</option>
+        <option value="created_at" {% if order_by_param == 'created_at' %}selected{% endif %}>Created (Asc)</option>
+        <option value="-deadline" {% if order_by_param == '-deadline' %}selected{% endif %}>Deadline (Desc)</option>
+        <option value="deadline" {% if order_by_param == 'deadline' %}selected{% endif %}>Deadline (Asc)</option>
+    </select>
+
+    <button type="submit">Apply</button>
+</form>
+
+<ol>
+    {% for task_object in task_list %}
+        <li>
+            <p><b>Title:</b> {{ task_object.title }}</p>
+            <p><b>Creation Date:</b> {{ task_object.created_at }}</p>
+            <p><b>Deadline:</b> {{ task_object.deadline }}</p>
+            {% if task_object.pending == True %}
+                <a href='{% url "tasks:mark_completed_view" slug=task_object.slug %}'>Mark As Completed</a> ||
+            {% else %}
+                <a href='{% url "tasks:mark_pending_view" slug=task_object.slug %}'>Mark As Pending</a> ||
+            {% endif %}
+            <a href='{% url "tasks:task_detail_view" slug=task_object.slug %}'>Details</a> ||
+            <a href='{% url "tasks:task_update_view" slug=task_object.slug %}'>Update</a> ||
+            <a href='{% url "tasks:task_delete_view" slug=task_object.slug %}'>Delete</a><br>
+        </li>
+    {% endfor %}
+</ol>
+
+{% endblock content %}

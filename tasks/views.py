@@ -2,6 +2,8 @@ from django.shortcuts import render,redirect,get_object_or_404
 from django.contrib.auth.decorators import login_required
 from tasks.models import Task, TaskImage
 from tasks.forms import TaskForm, TaskImageForm
+from django.db.models import Case, When, Value
+from django.db import models
 # Create your views here.
 
 @login_required
@@ -137,3 +139,25 @@ def task_image_delete_view(request, image_id):
         'task_image' : task_image,
     }
     return render(request, 'tasks/task_image_delete.html', context)
+
+
+@login_required
+def task_list_view(request, filter=None):
+    priority_filter = request.GET.get('priority', 'all')
+    status_filter = request.GET.get('status', 'all')
+    order_by_param = request.GET.get('order_by', '-created_at')
+    task_list = Task.objects.filter(user=request.user)
+    if priority_filter in ['L', 'M', 'H']:
+        task_list = task_list.filter(priority=priority_filter)
+    if status_filter in ['True', 'False']:
+        task_list = task_list.filter(pending=(status_filter == 'True'))
+    if order_by_param not in ['created_at', '-created_at', 'deadline', '-deadline']:
+        order_by_param = '-created_at'
+    task_list = task_list.order_by(order_by_param)
+    context = {
+        'task_list': task_list,
+        'priority_filter': priority_filter,
+        'status_filter': status_filter,
+        'order_by_param': order_by_param,
+    }
+    return render(request, 'tasks/task_list_filter.html', context)

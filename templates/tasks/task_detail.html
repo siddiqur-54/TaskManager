@@ -2,13 +2,13 @@
 
 {% block content %}
 <h2>Task Details</h2>
-<h3>Title: {{ task_object.title }}</h3>
-<h3>Created On: {{ task_object.created_at }}</h3>
-<h3>Description: {{ task_object.description }}</h3>
-<h3>Priority: {{ task_object.get_priority_display }}</h3>
-<h3>Deadline: {{ task_object.deadline }}</h3>
-<h3>Last Updated On: {{ task_object.updated_at }}</h3>
-<h3>Pending Status: {{ task_object.pending }}</h3>
+<p><b>Title: </b>{{ task_object.title }}</p>
+<p><b>Created On: </b>{{ task_object.created_at }}</p>
+<p><b>Description: </b>{{ task_object.description }}</p>
+<p><b>Priority: </b>{{ task_object.get_priority_display }}</p>
+<p><b>Deadline: </b>{{ task_object.deadline }}</p>
+<p><b>Last Updated On: </b>{{ task_object.updated_at }}</p>
+<p><b>Pending Status: </b>{{ task_object.pending }}</p>
 
 {% if task_image_list %}
   <h3>Images:</h3>
