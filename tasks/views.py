@@ -7,13 +7,13 @@ from django.db import models
 # Create your views here.
 
 @login_required
-def task_list_search_pending_view(request):
+def task_list_search_view(request):
     query_dict = request.GET
     try:
         query = query_dict.get("query")
     except:
         query = None
-    task_object_list = Task.objects.filter(user=request.user, pending=True)
+    task_object_list = Task.objects.filter(user=request.user)
     task_object_search_list = None
     if query is not None:
        task_object_search_list = task_object_list.search(query=query)
@@ -22,26 +22,7 @@ def task_list_search_pending_view(request):
         'task_object_list' : task_object_list,
         'task_object_search_list' : task_object_search_list
     }
-    return render(request, 'tasks/task_list_search_pending.html', context)
-
-
-@login_required
-def task_list_search_completed_view(request):
-    query_dict = request.GET
-    try:
-        query = query_dict.get("query")
-    except:
-        query = None
-    task_object_list = Task.objects.filter(user=request.user, pending=False)
-    task_object_search_list = None
-    if query is not None:
-       task_object_search_list = task_object_list.search(query=query)
-    context = {
-        'query' : query,
-        'task_object_list' : task_object_list,
-        'task_object_search_list' : task_object_search_list
-    }
-    return render(request, 'tasks/task_list_search_completed.html', context)
+    return render(request, 'tasks/task_list_search.html', context)
 
 
 @login_required

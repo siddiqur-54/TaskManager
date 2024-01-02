@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 from tasks.utils import title_slugification
 from django.db.models.signals import pre_save, post_save
-from django.db.models import Q
 from django.urls import reverse
 
 # Create your models here.
@@ -10,8 +9,7 @@ class TaskQuerySet(models.QuerySet):
     def search(self, query=None):
         if query is None or query == "":
             return self.none()
-        lookups = Q(title__icontains=query) | Q(description__icontains=query)
-        return self.filter(lookups) 
+        return self.filter(title__icontains=query) 
 
 class TaskManager(models.Manager):
     def get_queryset(self):
