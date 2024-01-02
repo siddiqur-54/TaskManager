@@ -1,0 +1,18 @@
+{% extends "base_tasks.html" %}
+
+{% block content %}
+
+<h2>Update Profile</h2>
+{% if not updated %}
+
+<div style="margin-top: 30px;">
+<form action="." method="POST">
+    {% csrf_token %}
+    {{person_form.as_p}}
+    <button style="margin-top: 10px;" type="submit">Update Profile</button>
+</form>
+</div>
+
+{% endif %}
+
+{% endblock content %}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the world's top Task Manager</h1>
+    <h2>Welcome Mr. {{ user.username }}</h2>
+    <a href='/'>View Profile</a> ||
+    <a href='{% url "accounts:update_view" %}'>Update Profile</a> ||
+    <a href='{% url "accounts:change_password_view" %}'>Change Password</a> ||
+    <a href='{% url "accounts:logout_view" %}'>Log Out</a> <br> <br>
+    
+    {% block content %}
+
+    {% endblock content %}
+</body>
+</html>
