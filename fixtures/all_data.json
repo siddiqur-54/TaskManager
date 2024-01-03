@@ -1,0 +1,863 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add person",
+    "content_type": 7,
+    "codename": "add_person"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change person",
+    "content_type": 7,
+    "codename": "change_person"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete person",
+    "content_type": 7,
+    "codename": "delete_person"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view person",
+    "content_type": 7,
+    "codename": "view_person"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add task",
+    "content_type": 8,
+    "codename": "add_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change task",
+    "content_type": 8,
+    "codename": "change_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete task",
+    "content_type": 8,
+    "codename": "delete_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view task",
+    "content_type": 8,
+    "codename": "view_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add task image",
+    "content_type": 9,
+    "codename": "add_taskimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change task image",
+    "content_type": 9,
+    "codename": "change_taskimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete task image",
+    "content_type": 9,
+    "codename": "delete_taskimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view task image",
+    "content_type": 9,
+    "codename": "view_taskimage"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$k7MtOoG7gClLhlhneFwWvJ$7Yi+F94A8gBT+uL9WxUrSEz7L8B2cDhIKd485jedEiI=",
+    "last_login": "2024-01-02T16:31:48.149Z",
+    "is_superuser": true,
+    "username": "siddiqur",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-01-02T12:05:29.880Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$uibG9kGKZF7DlUBVL8t6Ei$6n8MOGW9A3dpDAMuMJzNZFf1QbmUFKttCC91Ma3WB+k=",
+    "last_login": "2024-01-02T21:50:08.459Z",
+    "is_superuser": false,
+    "username": "Mashfi",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-01-02T12:07:05.797Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$B4JYeJztmm30O6XxjlMKNt$Z6cIiG4cAf3eufVr+lsNSCWgBGq5DuqmNidoqWGnrus=",
+    "last_login": "2024-01-03T06:19:32.956Z",
+    "is_superuser": false,
+    "username": "Fatima",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-01-03T06:19:20.549Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$ijd4Tng5Iie4NDMvzGnLes$b4SSAPlZWEZ+Q/8mcxyT+pA+KDK7zGiOe9ThULfJxow=",
+    "last_login": "2024-01-03T06:31:44.152Z",
+    "is_superuser": false,
+    "username": "Bony",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-01-03T06:31:31.755Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "accounts",
+    "model": "person"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "tasks",
+    "model": "task"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "tasks",
+    "model": "taskimage"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "42xlguiu74ilentns2t0kusr1vzx8u8x",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyFF6AIevfsNZNkFqRpISnsy_rtt0oPOcd6beYuA61LC2tMcJhYXYcTpt4tIz1R3wA-s9yap1WWeotwVedAub43T63q4fwcFe9nWZ4sKtHMY0ZsxOXAqZvKZTdQ6ZUc4WKCUlbbOawRNyGNm4C0DEIrPF_TuOQI:1rKun2:ExzrkhJWOzkcqWl8YHGoZsxXMkHByPEFvYtapVmmd40",
+    "expire_date": "2024-01-17T06:31:44.159Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "fgtrzxs9zcp31pitq9hyu6kp5fyyfdu9",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSE8BgGX7vsNZAamUjU0Ke3K-O_apAvd3nPOfYmE21rT1nlJUxEXYcTpdyPMD247KHdst1nmua3LRHJX5EG7HObCz-vh_h1U7PVbQ3Co0ZKL-szWj2gY0XvDBlghxUIUivXBs6MRXAALRkH2WekcckTx_gDosTf-:1rKdYB:mrkLdD-PWEvxwWSGdHvXkZSH_qLmSYs3ch3Uj27cylE",
+    "expire_date": "2024-01-16T12:07:15.440Z"
+  }
+},
+{
+  "model": "accounts.person",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "contact": "01738711895",
+    "birth_date": "2022-01-01",
+    "gender": "M",
+    "blood_group": "O+"
+  }
+},
+{
+  "model": "accounts.person",
+  "pk": 2,
+  "fields": {
+    "user": 3,
+    "contact": "01738711894",
+    "birth_date": "2018-01-10",
+    "gender": "F",
+    "blood_group": "AB+"
+  }
+},
+{
+  "model": "accounts.person",
+  "pk": 3,
+  "fields": {
+    "user": 4,
+    "contact": "01738711896",
+    "birth_date": "2015-06-10",
+    "gender": "M",
+    "blood_group": "O+"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "title": "Reading Book",
+    "description": "I have to read many books for self development.",
+    "priority": "H",
+    "deadline": "2024-01-15T22:25:00Z",
+    "created_at": "2024-01-02T16:27:22.262Z",
+    "updated_at": "2024-01-02T21:16:58.103Z",
+    "pending": true,
+    "slug": "reading-book"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "title": "Watching Movies",
+    "description": "I have to watch some movies",
+    "priority": "M",
+    "deadline": "2024-01-20T22:28:00Z",
+    "created_at": "2024-01-02T16:28:48.008Z",
+    "updated_at": "2024-01-02T16:28:48.016Z",
+    "pending": true,
+    "slug": "watching-movies"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 3,
+  "fields": {
+    "user": 2,
+    "title": "Watching Football",
+    "description": "I have to watch some football matches in upcoming days",
+    "priority": "L",
+    "deadline": "2024-01-30T22:29:00Z",
+    "created_at": "2024-01-02T16:29:42.812Z",
+    "updated_at": "2024-01-02T20:57:30.050Z",
+    "pending": false,
+    "slug": "watching-football"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 4,
+  "fields": {
+    "user": 3,
+    "title": "Visiting Rivers",
+    "description": "I want to visit some rivers in Bangladesh",
+    "priority": "H",
+    "deadline": "2024-01-25T12:21:00Z",
+    "created_at": "2024-01-03T06:21:33.153Z",
+    "updated_at": "2024-01-03T06:21:33.166Z",
+    "pending": true,
+    "slug": "visiting-rivers"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 5,
+  "fields": {
+    "user": 3,
+    "title": "Visiting Mosques",
+    "description": "I want to visit some mosques in Bangladesh",
+    "priority": "H",
+    "deadline": "2024-01-15T15:24:00Z",
+    "created_at": "2024-01-03T06:24:54.045Z",
+    "updated_at": "2024-01-03T06:30:17.364Z",
+    "pending": false,
+    "slug": "visiting-mosques"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 6,
+  "fields": {
+    "user": 3,
+    "title": "Tourist Places",
+    "description": "I will give a tour for visiting many places",
+    "priority": "M",
+    "deadline": "2024-01-18T16:26:00Z",
+    "created_at": "2024-01-03T06:27:39.045Z",
+    "updated_at": "2024-01-03T06:30:36.681Z",
+    "pending": true,
+    "slug": "tourist-places"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 7,
+  "fields": {
+    "user": 4,
+    "title": "Mega Projects",
+    "description": "I am planning to visit the mega projects of our country",
+    "priority": "H",
+    "deadline": "2024-01-23T17:38:00Z",
+    "created_at": "2024-01-03T06:33:30.947Z",
+    "updated_at": "2024-01-03T06:35:18.154Z",
+    "pending": true,
+    "slug": "mega-projects"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 8,
+  "fields": {
+    "user": 4,
+    "title": "Visiting Nature",
+    "description": "I am very curious about visiting the natural beauty of our country",
+    "priority": "H",
+    "deadline": "2024-01-20T18:36:00Z",
+    "created_at": "2024-01-03T06:37:10.579Z",
+    "updated_at": "2024-01-03T06:37:10.587Z",
+    "pending": true,
+    "slug": "visiting-nature"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 1,
+  "fields": {
+    "task": 1,
+    "image": "images/best_self.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 2,
+  "fields": {
+    "task": 1,
+    "image": "images/big_magic.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 3,
+  "fields": {
+    "task": 1,
+    "image": "images/habit_of_highly_effective_people.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 5,
+  "fields": {
+    "task": 1,
+    "image": "images/the_alchemist.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 6,
+  "fields": {
+    "task": 1,
+    "image": "images/power_of_now_qwigPMj.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 7,
+  "fields": {
+    "task": 2,
+    "image": "images/lal.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 8,
+  "fields": {
+    "task": 2,
+    "image": "images/pk.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 9,
+  "fields": {
+    "task": 2,
+    "image": "images/rang_de_basanti.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 10,
+  "fields": {
+    "task": 2,
+    "image": "images/tare_zameen_par.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 11,
+  "fields": {
+    "task": 3,
+    "image": "images/gotze_muller.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 12,
+  "fields": {
+    "task": 3,
+    "image": "images/klose.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 13,
+  "fields": {
+    "task": 3,
+    "image": "images/neur.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 14,
+  "fields": {
+    "task": 3,
+    "image": "images/ozil.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 15,
+  "fields": {
+    "task": 4,
+    "image": "images/river_blue.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 16,
+  "fields": {
+    "task": 4,
+    "image": "images/river_boat.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 17,
+  "fields": {
+    "task": 4,
+    "image": "images/river_green.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 18,
+  "fields": {
+    "task": 5,
+    "image": "images/baher_hat_mosjid.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 19,
+  "fields": {
+    "task": 5,
+    "image": "images/sona_mosjid.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 20,
+  "fields": {
+    "task": 6,
+    "image": "images/bandarban.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 21,
+  "fields": {
+    "task": 6,
+    "image": "images/cox_bazar.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 22,
+  "fields": {
+    "task": 6,
+    "image": "images/paharpur.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 23,
+  "fields": {
+    "task": 6,
+    "image": "images/rangamati_hill.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 24,
+  "fields": {
+    "task": 7,
+    "image": "images/metro_rail.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 25,
+  "fields": {
+    "task": 7,
+    "image": "images/nuclear_power.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 27,
+  "fields": {
+    "task": 7,
+    "image": "images/padma_bridge_7YIQGlZ.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 28,
+  "fields": {
+    "task": 8,
+    "image": "images/river_green_SypDVdm.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 29,
+  "fields": {
+    "task": 8,
+    "image": "images/stone_hill.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 30,
+  "fields": {
+    "task": 8,
+    "image": "images/sylhet_water_place.jpeg"
+  }
+}
+]

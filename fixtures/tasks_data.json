@@ -1,0 +1,346 @@
+[
+{
+  "model": "tasks.task",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "title": "Reading Book",
+    "description": "I have to read many books for self development.",
+    "priority": "H",
+    "deadline": "2024-01-15T22:25:00Z",
+    "created_at": "2024-01-02T16:27:22.262Z",
+    "updated_at": "2024-01-02T21:16:58.103Z",
+    "pending": true,
+    "slug": "reading-book"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "title": "Watching Movies",
+    "description": "I have to watch some movies",
+    "priority": "M",
+    "deadline": "2024-01-20T22:28:00Z",
+    "created_at": "2024-01-02T16:28:48.008Z",
+    "updated_at": "2024-01-02T16:28:48.016Z",
+    "pending": true,
+    "slug": "watching-movies"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 3,
+  "fields": {
+    "user": 2,
+    "title": "Watching Football",
+    "description": "I have to watch some football matches in upcoming days",
+    "priority": "L",
+    "deadline": "2024-01-30T22:29:00Z",
+    "created_at": "2024-01-02T16:29:42.812Z",
+    "updated_at": "2024-01-02T20:57:30.050Z",
+    "pending": false,
+    "slug": "watching-football"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 4,
+  "fields": {
+    "user": 3,
+    "title": "Visiting Rivers",
+    "description": "I want to visit some rivers in Bangladesh",
+    "priority": "H",
+    "deadline": "2024-01-25T12:21:00Z",
+    "created_at": "2024-01-03T06:21:33.153Z",
+    "updated_at": "2024-01-03T06:21:33.166Z",
+    "pending": true,
+    "slug": "visiting-rivers"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 5,
+  "fields": {
+    "user": 3,
+    "title": "Visiting Mosques",
+    "description": "I want to visit some mosques in Bangladesh",
+    "priority": "H",
+    "deadline": "2024-01-15T15:24:00Z",
+    "created_at": "2024-01-03T06:24:54.045Z",
+    "updated_at": "2024-01-03T06:30:17.364Z",
+    "pending": false,
+    "slug": "visiting-mosques"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 6,
+  "fields": {
+    "user": 3,
+    "title": "Tourist Places",
+    "description": "I will give a tour for visiting many places",
+    "priority": "M",
+    "deadline": "2024-01-18T16:26:00Z",
+    "created_at": "2024-01-03T06:27:39.045Z",
+    "updated_at": "2024-01-03T06:30:36.681Z",
+    "pending": true,
+    "slug": "tourist-places"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 7,
+  "fields": {
+    "user": 4,
+    "title": "Mega Projects",
+    "description": "I am planning to visit the mega projects of our country",
+    "priority": "H",
+    "deadline": "2024-01-23T17:38:00Z",
+    "created_at": "2024-01-03T06:33:30.947Z",
+    "updated_at": "2024-01-03T06:35:18.154Z",
+    "pending": true,
+    "slug": "mega-projects"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 8,
+  "fields": {
+    "user": 4,
+    "title": "Visiting Nature",
+    "description": "I am very curious about visiting the natural beauty of our country",
+    "priority": "H",
+    "deadline": "2024-01-20T18:36:00Z",
+    "created_at": "2024-01-03T06:37:10.579Z",
+    "updated_at": "2024-01-03T06:37:10.587Z",
+    "pending": true,
+    "slug": "visiting-nature"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 1,
+  "fields": {
+    "task": 1,
+    "image": "images/best_self.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 2,
+  "fields": {
+    "task": 1,
+    "image": "images/big_magic.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 3,
+  "fields": {
+    "task": 1,
+    "image": "images/habit_of_highly_effective_people.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 5,
+  "fields": {
+    "task": 1,
+    "image": "images/the_alchemist.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 6,
+  "fields": {
+    "task": 1,
+    "image": "images/power_of_now_qwigPMj.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 7,
+  "fields": {
+    "task": 2,
+    "image": "images/lal.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 8,
+  "fields": {
+    "task": 2,
+    "image": "images/pk.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 9,
+  "fields": {
+    "task": 2,
+    "image": "images/rang_de_basanti.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 10,
+  "fields": {
+    "task": 2,
+    "image": "images/tare_zameen_par.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 11,
+  "fields": {
+    "task": 3,
+    "image": "images/gotze_muller.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 12,
+  "fields": {
+    "task": 3,
+    "image": "images/klose.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 13,
+  "fields": {
+    "task": 3,
+    "image": "images/neur.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 14,
+  "fields": {
+    "task": 3,
+    "image": "images/ozil.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 15,
+  "fields": {
+    "task": 4,
+    "image": "images/river_blue.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 16,
+  "fields": {
+    "task": 4,
+    "image": "images/river_boat.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 17,
+  "fields": {
+    "task": 4,
+    "image": "images/river_green.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 18,
+  "fields": {
+    "task": 5,
+    "image": "images/baher_hat_mosjid.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 19,
+  "fields": {
+    "task": 5,
+    "image": "images/sona_mosjid.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 20,
+  "fields": {
+    "task": 6,
+    "image": "images/bandarban.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 21,
+  "fields": {
+    "task": 6,
+    "image": "images/cox_bazar.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 22,
+  "fields": {
+    "task": 6,
+    "image": "images/paharpur.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 23,
+  "fields": {
+    "task": 6,
+    "image": "images/rangamati_hill.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 24,
+  "fields": {
+    "task": 7,
+    "image": "images/metro_rail.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 25,
+  "fields": {
+    "task": 7,
+    "image": "images/nuclear_power.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 27,
+  "fields": {
+    "task": 7,
+    "image": "images/padma_bridge_7YIQGlZ.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 28,
+  "fields": {
+    "task": 8,
+    "image": "images/river_green_SypDVdm.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 29,
+  "fields": {
+    "task": 8,
+    "image": "images/stone_hill.jpeg"
+  }
+},
+{
+  "model": "tasks.taskimage",
+  "pk": 30,
+  "fields": {
+    "task": 8,
+    "image": "images/sylhet_water_place.jpeg"
+  }
+}
+]
