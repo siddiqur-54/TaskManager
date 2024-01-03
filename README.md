@@ -40,3 +40,17 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 Visit http://localhost:8000/ in your web browser
+
+## 2. Setting Up Environmental Variables
+
+To manage sensitive information and configuration settings, this project uses environmental variables. Follow the steps below to set up your `.env` file:
+
+### I. Create a `.env` file:
+   Create a file named `.env` in the root of your project.
+
+### II. **Add Configuration:**
+   Open the `.env` file and add the following configuration:
+   ```env
+   DJANGO_SECRET_KEY='your-secret-key'
+   DEBUG=1  # Set to 0 for production
+   DJANGO_ALLOWED_HOST=your-allowed-host
