@@ -41,7 +41,7 @@ def task_create_view(request):
         for image in images:
             TaskImage.objects.create(task=task_object, image=image)
         context['created'] = True
-        return redirect('/tasks/list-search-pending/')
+        return redirect(task_object.get_absolute_url())
     return render(request, 'tasks/task_create.html', context)
 
 
@@ -72,10 +72,7 @@ def task_delete_view(request, slug=None):
     if request.method == "POST":
         if task_object.pending == True:
             task_object.delete()
-            return redirect('/tasks/list-search-pending/')
-        else:
-            task_object.delete()
-            return redirect('/tasks/list-search-completed/')
+            return redirect('/tasks/list-search/')
     context = {
         'task_object' : task_object
     }
@@ -98,7 +95,7 @@ def mark_completed_view(request, slug=None):
     task_object = Task.objects.get(user=request.user, slug=slug)
     task_object.pending = False
     task_object.save()
-    return redirect('/tasks/list-search-pending/')
+    return redirect(task_object.get_absolute_url())
 
 
 @login_required
@@ -106,7 +103,7 @@ def mark_pending_view(request, slug=None):
     task_object = Task.objects.get(user=request.user, slug=slug)
     task_object.pending = True
     task_object.save()
-    return redirect('/tasks/list-search-completed/')
+    return redirect(task_object.get_absolute_url())
 
 
 @login_required
