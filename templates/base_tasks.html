@@ -21,6 +21,7 @@
         <a href='{% url "tasks:task_create_view" %}'>Create Task</a>
         <a href='{% url "tasks:task_list_search_view" %}'>Search Task</a>
         <a href="{% url 'tasks:task_list_filter' %}">Filter Task</a>
+        <a href="{% url 'api:task_all_api_view' %}">Task API</a>
         <a href='{% url "accounts:logout_view" %}'>Log Out</a>
     </nav>
 
