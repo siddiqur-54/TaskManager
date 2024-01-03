@@ -9,7 +9,7 @@ cd TaskManager
 ```bash
 python -m venv myvenv
 ```
-Here, myvenv is the name of the virtual environment. You can choose any name according to your project.
+Here, `myvenv` is the name of the virtual environment. You can choose any name according to your project.
 ### III. Activate the virtual environment:
 __For windows:__
 ```bash
