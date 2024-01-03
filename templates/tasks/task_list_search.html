@@ -21,7 +21,7 @@
             <p>
                 <b>Priority:</b> {{ task_object.get_priority_display }}
                 <b>Status:</b>
-                {% if pending == True %} Pending
+                {% if task_object.pending == True %} Pending
                 {% else %} Completed
                 {% endif %}
             </p>
@@ -49,7 +49,7 @@
             <p>
                 <b>Priority:</b> {{ task_object.get_priority_display }}
                 <b>Status:</b> 
-                {% if pending == True %} Pending
+                {% if task_object.pending == True %} Pending
                 {% else %} Completed
                 {% endif %}
             </p>
